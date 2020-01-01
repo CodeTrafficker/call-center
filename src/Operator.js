@@ -5,15 +5,6 @@ import MOCKCUSTOMERS from './mockData';
 class CustomerInfo extends React.Component {
   render() {
     const mockCustomers = MOCKCUSTOMERS;
-    const custPurchases = mockCustomers;
-
-    const recentPurchases = custPurchases.map((purchase)=>
-      <div>
-        {purchase.purchases.store1}<br />
-        {purchase.purchases.store2}<br />
-        {purchase.purchases.store3}<br />
-      </div>
-    );
 
     const customerList = mockCustomers.map((customer)=>
       <tr>
