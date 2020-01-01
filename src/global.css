@@ -1,0 +1,7 @@
+/* Global resets and sitewide styles */
+ul  {
+  list-style: none;
+}
+th  {
+  text-align: start;
+}
