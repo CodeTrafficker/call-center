@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './global.css';
 import './App.css';
 import CustomerInfo from './Operator';
 
 
-const viewName = 'Call Center';
-const H1Title = <h1>{viewName}</h1>;
+// Flip between Operator, Manager, and Admin
+const viewName = 'Operator View';
+const H1Title = <h1>Call Center - {viewName}</h1>;
 
 function App() {
   return (
