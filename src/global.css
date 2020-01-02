@@ -1,4 +1,11 @@
 /* Global resets and sitewide styles */
+html  {
+  width: fit-content;
+  max-width: 1200px;
+}
+@media only screen and (min-width: 600px) {
+  html  {width: 100%;}
+}
 ul  {
   list-style: none;
 }
