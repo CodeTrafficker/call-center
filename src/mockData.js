@@ -1,6 +1,7 @@
 // Static mock of json str from API somewhere.
 const MOCKCUSTOMERS = [
     {
+      id: 1,
       name: 'Veronica Fernandez',
       cc: '123456789001',
       purchases: {
@@ -11,6 +12,7 @@ const MOCKCUSTOMERS = [
       summary: ''
     },
     {
+      id: 2,
       name: 'Adrian Castro',
       cc: '223456789002',
       purchases: {
@@ -21,6 +23,7 @@ const MOCKCUSTOMERS = [
       summary: ''
     },
     {
+      id: 3,
       name: 'Rhonda Willis',
       cc: '323456789003',
       purchases: {

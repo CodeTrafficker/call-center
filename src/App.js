@@ -1,21 +1,18 @@
 import React from 'react';
 import './global.css';
 import './App.css';
-import CustomerInfo from './Operator';
+import Routing from './index';
 
+const H1Title = <h1>Call Center</h1>;
 
-// Flip between Operator, Manager, and Admin
-const viewName = 'Operator View';
-const H1Title = <h1>Call Center - {viewName}</h1>;
-
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         {H1Title}
       </header>
 
-      <CustomerInfo />
+      <Routing />
 
     </div>
   );

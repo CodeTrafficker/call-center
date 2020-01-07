@@ -2,8 +2,7 @@ import React from 'react';
 // import './operator.css';
 // import MOCKCUSTOMERS from './mockData';
 
-
-class Operator extends React.Component {
+class Admin extends React.Component {
   constructor(props)  {
     super(props);
     this.state ={
@@ -12,14 +11,12 @@ class Operator extends React.Component {
   }
 
   render() {
-
-
     return (
-      <div className="opGrid">
-        <h2>Operator</h2>
-        Some stuff from Operator.js.
+      <div className="">
+        <h2>Admin</h2>
+        Some stuff from Admin.js.
       </div>
     );
   }
 }
-export default Operator;
+export default Admin;
