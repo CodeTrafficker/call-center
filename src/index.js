@@ -6,7 +6,6 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import Operator from './Operator';
-import CustomerInfo from './CustomerInfo';
 import Managers from './Managers';
 import Home from './Home';
 import Admin from './Admin';
@@ -50,7 +49,6 @@ export default function Routing() {
           </Route>
           <Route path="/operator">
             <Operator />
-            <CustomerInfo />
           </Route>
           <Route path="/managers">
             <Managers />
@@ -63,30 +61,6 @@ export default function Routing() {
   );
 }
 
-// Can also move these h2s into the switch/routes above
-// function Home() {
-//   return (
-//     <h2>Home</h2>
-//   );
-// }
-
-// function Operator() {
-//   return (
-//     <h2>Operator</h2>
-//   );
-// }
-
-// function Managers() {
-//   return (
-//       <h2>Managers</h2>
-//   );
-// }
-
-// function Admin() {
-//   return (
-//       <h2>Admins</h2>
-//   );
-// }
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -6,17 +6,19 @@ class CustomerInfo extends React.Component {
   constructor(props)  {
     super(props);
     this.state ={
+      // TODO: any form attr/vals here, like fraud: false
       value: ''
     };
   }
 
-  //   this.handleChange = this.handleChange.bind(this);
-  //   // this.handleSubmit = this.handleSubmit.bind(this);
-  // }
+  handleSubmit = (e) => {
+    e.preventDefault();
+    // send data from the actual state
+  }
 
-  // handleChange(event) {
-  //   this.setState({value: event.target.value});
-  // }
+  handleChange = (e) => {
+    this.setState({[e.target.name]: e.target.value})
+  }
 
 
   render() {
@@ -27,8 +29,7 @@ class CustomerInfo extends React.Component {
       // {this.state.value = customer.summary};
       // {customer.summary}
 
-      <div className="customerData">
-
+      <div className="customerData" key={customer.id}>
         <div>{customer.name}</div>
         <div>{customer.cc}</div>
         <div>
@@ -36,11 +37,10 @@ class CustomerInfo extends React.Component {
           {customer.purchases.store2} - ${customer.purchases.amt2}<br />
           {customer.purchases.store3} - ${customer.purchases.amt3}<br />
         </div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <textarea value="" onChange={this.handleChange}></textarea>
-          <button type="submit" onClick={this.handleSubmit}>Update summary</button>
+          <button type="submit">Update summary</button>
         </form>
-
       </div>
     );
 
@@ -59,3 +59,4 @@ class CustomerInfo extends React.Component {
 }
 
 export default CustomerInfo;
+
