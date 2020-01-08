@@ -43,7 +43,7 @@ class Operator extends React.Component {
 
     // Insert CustomerInfo component if ccid is valid:
     if(ccidArr.includes(this.state.value) )  {
-      showCustInfo = <CustomerInfo ccid={this.state.value} />; 
+      showCustInfo = <CustomerInfo value={this.state.value} />; 
     } else  {
       // Else blank out CustomerInfo and insert err msg
       document.querySelector('.ccInfoForm input')
