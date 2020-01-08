@@ -23,15 +23,6 @@
   width: 100%;
 }
 
-.customerData button  {
-  display: block;
-  background-color: salmon;
-  border-radius: .25rem;
-  color: #fff;
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 10px 20px;
-}
 
 
 .opGrid {

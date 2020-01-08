@@ -66,7 +66,7 @@ class Operator extends React.Component {
 
         <form onSubmit={this.handleSubmit} className='ccInfoForm'>
           <input type="number" name="ccid" value={this.state.value} onChange={this.handleChange}></input>
-          <button type="submit">Update summary</button>
+          <button type="submit">Show customer record</button>
         </form>
 
         {showCustInfo}
