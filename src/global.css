@@ -1,4 +1,6 @@
-/* Global resets and sitewide styles */
+/* Global resets and sitewide styles only */
+/* Box model? Normalize? set all to pos:rel? */
+/* TODO: rems should be standardized */
 html  {
   width: fit-content;
   max-width: 1200px;
@@ -6,9 +8,52 @@ html  {
 @media only screen and (min-width: 600px) {
   html  {width: 100%;}
 }
+
+body  {
+  font-family: "Lato", arial, sans-serif;
+  font-size: 1em;
+  margin: 0 20px 60px 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button  {
+  border-radius: 1.25rem;
+  color: #E9F2F9;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: .75rem 2rem;
+  display: block;
+  margin: 0 auto 10px auto;
+  background-color: #F26C4F;
+  opacity: .75;
+  cursor: pointer;
+  /* Not working? */
+  transition: opacity 0.5s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover, button:active  {
+  opacity: 1;
+}
+
 ul  {
+  padding: 0;
   list-style: none;
 }
+
 th  {
   text-align: start;
 }
+
+a   {
+  text-decoration: none;
+}
+
+#root > h2  {
+  text-align: center;;
+}
+/* END resets */
