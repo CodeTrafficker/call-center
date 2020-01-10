@@ -1,12 +1,15 @@
-/* Global resets and sitewide styles only */
-/* Box model? Normalize? set all to pos:rel? */
+ /* Global resets and sitewide styles only */
+/* TODO: Box model? Normalize? */
 /* TODO: rems should be standardized */
 html  {
   width: fit-content;
-  max-width: 1200px;
 }
 @media only screen and (min-width: 600px) {
   html  {width: 100%;}
+}
+
+html *  {
+  position: relative;
 }
 
 body  {
@@ -16,6 +19,29 @@ body  {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Global flexbox styles */
+/* .row and .column for children of flex containters*/
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+/* /Global flexbox styles */
+
 
 button  {
   border-radius: 1.25rem;
@@ -54,6 +80,6 @@ a   {
 }
 
 #root > h2  {
-  text-align: center;;
+  text-align: center;
 }
 /* END resets */

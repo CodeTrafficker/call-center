@@ -4,18 +4,11 @@
   font-weight: bold;
 }
 .customerData  {
-  /*vertical-align: top;*/
   line-height: 1.5rem;
   font-size: .8rem;
   padding: 5px 0 20px 0;
 }
 
-.customerData form  {
-  align-self: flex-end;
-  width: 100%;
-  margin-top: 10px;
-
-}
 .customerData textarea  {
   display: block;
   margin-bottom: 10px;
@@ -36,6 +29,30 @@
 .opHeader > div, .customerData > div {
   flex: 1;
   padding-right: 10px;
+}
+.customerData > div:last-child {
+  padding-right: 0;
+}
+
+.recentPurchases  {
+  display: flex;
+}
+.recentPurchases .row {
+  border-bottom: 1px solid #000;
+}
+
+/* Purchases in list:*/
+.recentPurchases > .row > div:first-child {
+  flex-grow: 3;
+}
+/* purchase checkboxes: */
+.recentPurchases > .row > div:last-child  {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.summaryRow textarea  {
+  width: 100%; 
 }
 
 /* Any tablet and up adjustments: */

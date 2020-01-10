@@ -30,19 +30,39 @@ class CustomerInfo extends React.Component {
     // How to clear on submit or when new ccid entered from Operator...
     const selected = mockCustomers.find(customer => customer.ccid === this.state.passedCCID );
 
-    const selectedCustomer = <div className="customerData" key={selected.id}>
-    <div>{selected.name}   <br /> passedCCID: {this.state.passedCCID}  </div>
-    <div>{selected.cc}</div>
-    <div>
-      {selected.purchases.store1} - ${selected.purchases.amt1}<br />
-      {selected.purchases.store2} - ${selected.purchases.amt2}<br />
-      {selected.purchases.store3} - ${selected.purchases.amt3}<br />
-    </div>
-    <form onSubmit={this.handleSubmit}>
-      <textarea value="" onChange={this.handleChange}></textarea>
-      <button type="submit">Update summary</button>
+    const selectedCustomer = 
+
+    <form onSubmit={this.handleSubmit} key={selected.id}>
+    
+      <div  className="customerData">
+        <div>{selected.name}   <br /> passedCCID: {this.state.passedCCID}  </div>
+        <div>{selected.cc}</div>
+
+        <div className="recentPurchases column">
+          <div className="row">
+            <div>{selected.purchases.store1} - ${selected.purchases.amt1}</div>
+            <div>CKBOX</div>
+          </div>
+
+          <div className="row">
+            <div>{selected.purchases.store2} - ${selected.purchases.amt2}</div>
+            <div>CKBOX</div>
+          </div>
+
+          <div className="row">
+            <div>{selected.purchases.store3} - ${selected.purchases.amt3}</div>
+            <div>CKBOX</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="summaryRow">
+        <p><label>Was this card stolen?</label> CKBOX</p>
+        <h3><label>Summary</label></h3>
+        <textarea value="" onChange={this.handleChange}></textarea>
+        <button type="submit">Update summary</button>
+      </div>
     </form>
-  </div>
       
 
 
@@ -51,7 +71,7 @@ class CustomerInfo extends React.Component {
         <div className="opHeader">
           <div>Name</div>
           <div>Credit Card</div>
-          <div>Recent Purchases</div>
+          <div>Recent Purchases - check box if fraudulent</div>
         </div>
         {selectedCustomer}
       </div>
