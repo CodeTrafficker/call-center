@@ -52,7 +52,9 @@
 }
 
 .summaryRow textarea  {
-  width: 100%; 
+  margin-bottom: 10px;
+  min-height: 100px;
+  width: 100%;
 }
 
 /* Any tablet and up adjustments: */

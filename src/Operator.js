@@ -19,7 +19,7 @@ class Operator extends React.Component {
   // Get all available ccids:
   currentCustomers = () => {
     mockCustomers.map((customer)=>  {
-      console.log('ccid: '+customer.ccid);
+      // console.log('ccid: '+customer.ccid);
       ccidArr.push(customer.ccid);
       return ccidArr
     }
@@ -43,9 +43,10 @@ class Operator extends React.Component {
 
     // Insert CustomerInfo component if ccid is valid:
     if(ccidArr.includes(this.state.value) )  {
-      showCustInfo = <CustomerInfo value={this.state.value} />; 
+      showCustInfo = <CustomerInfo value={this.state.value} />;
+
+    // Else blank out CustomerInfo and insert err msg
     } else  {
-      // Else blank out CustomerInfo and insert err msg
       document.querySelector('.ccInfoForm input')
       .insertAdjacentHTML('afterend',"<span class='noReportErr'>There are no reports under passcode <b>"+ 
         this.state.value +
@@ -57,7 +58,6 @@ class Operator extends React.Component {
 
 
   render() {
-
     return (
       <div className="opGrid">
         <h2>Operator</h2>
