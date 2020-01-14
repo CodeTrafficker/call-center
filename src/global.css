@@ -68,12 +68,7 @@ textarea  {
 }
 /* / colors */
 
-html  {
-  width: fit-content;
-}
-@media only screen and (min-width: 600px) {
-  html  {width: 100%;}
-}
+html  {width: 100%;}
 
 html *  {
   position: relative;
@@ -82,7 +77,7 @@ html *  {
 body  {
   font-family: "Lato", arial, sans-serif;
   font-size: 1em;
-  margin: 0 20px 60px 20px;
+  margin: 0 0 60px 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -131,4 +126,10 @@ a   {
   text-align: center;
 }
 
+/* Any tablet and up adjustments: */
+@media only screen and (min-width: 600px) {
+  body  {
+    margin: 0 20px 60px 20px;
+  }
+}
 /* END resets */
