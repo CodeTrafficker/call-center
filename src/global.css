@@ -1,6 +1,73 @@
  /* Global resets and sitewide styles only */
 /* TODO: Box model? Normalize? */
 /* TODO: rems should be standardized */
+
+
+
+/* Color schemes:
+Darkest
+mids
+highlight
+
+https://www.colourlovers.com/palette/3529601/WDI_103 - dark red to manila:
+33191A
+AB3334
+DDA185
+E8D1A5 (?)
+FAE9C8
+
+Burning Desire: https://www.colourlovers.com/palette/3915027/Burning_Desire
+5F324B
+654662
+7E4D79
+964B6A
+E8638B
+
+--> Halocline - https://www.colourlovers.com/palette/3572150/Halocline
+06292D
+02717A
+008D9E
+03BEE7
+DDE39B
+
+https://www.colourlovers.com/palette/3583115/Emergence looks good, basic blues
+*/
+
+:root {
+  --darkest-bg: #06292D; /* header, hard lines*/
+  --dark-bg: #02717A;    /*text*/
+  --midlight1: #008D9E;  /*links*/
+  --midlight2: #03BEE7;
+  --highlight: #DDE39B; /*Really light - text on dark bgs*/
+  --highlight2: #fff; 
+}
+
+body  {
+  background-color: var(--dark-bg);
+}
+
+#root {
+  background-color: var(--highlight);
+  color: var(--darkest-bg);
+}
+
+.App-header {
+  background-color: var(--darkest-bg);
+  color: var(--highlight2);
+}
+
+button  {
+  background-color: var(--midlight1);
+  color: var(--highlight2);
+}
+button:hover, button:active  {
+  background-color: var(--dark-bg);
+}
+textarea  {
+  border: 1px solid var(--dark-bg);
+}
+/* / colors */
+
 html  {
   width: fit-content;
 }
@@ -21,8 +88,10 @@ body  {
 }
 
 #root {
+  border-radius: .25rem;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 0 10px 0;
 }
 
 /* Global flexbox styles */
@@ -43,28 +112,7 @@ body  {
 /* /Global flexbox styles */
 
 
-button  {
-  border-radius: 1.25rem;
-  color: #E9F2F9;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: .75rem 2rem;
-  display: block;
-  margin: 0 auto 10px auto;
-  background-color: #F26C4F;
-  opacity: .75;
-  cursor: pointer;
-  /* Not working? */
-  transition: opacity 0.5s ease-in-out;
-}
 
-button:focus {
-    outline: none;
-}
-
-button:hover, button:active  {
-  opacity: 1;
-}
 
 ul  {
   padding: 0;
@@ -82,4 +130,5 @@ a   {
 #root > h2  {
   text-align: center;
 }
+
 /* END resets */

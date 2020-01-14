@@ -1,6 +1,7 @@
 import React from 'react';
 import MOCKCUSTOMERS from './mockData';
 import CustomerInfo from './CustomerInfo';
+import './forms.css';
 
 const mockCustomers = MOCKCUSTOMERS;
 let showCustInfo='';
@@ -21,7 +22,7 @@ class Operator extends React.Component {
     mockCustomers.map((customer)=>  {
       // console.log('ccid: '+customer.ccid);
       ccidArr.push(customer.ccid);
-      return ccidArr
+      return ccidArr;
     }
   )}
 

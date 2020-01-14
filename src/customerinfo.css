@@ -9,57 +9,71 @@
   padding: 5px 0 20px 0;
 }
 
-.customerData textarea  {
-  display: block;
-  margin-bottom: 10px;
-  outline: 1px solid #ccc;
-  width: 100%;
-}
-
-
 
 .opGrid {
   /*display: flex;*/
 }
 .opHeader, .customerData {
-  display: flex;
-  flex-wrap: wrap;
   border-bottom: 2px solid #000;
 }
 .opHeader > div, .customerData > div {
   flex: 1;
   padding-right: 10px;
 }
+
+.opHeader > div:nth-child(1),
+.opHeader > div:nth-child(2) {
+  display: none;
+}
+
+.opHeader > div:last-child, 
 .customerData > div:last-child {
+  flex: 3;
   padding-right: 0;
 }
 
-.recentPurchases  {
+.customerData > div:nth-child(1),
+.customerData > div:nth-child(2) {
+  display: inline-block;
+}
+
+.customerData > .recentPurchases  {
   display: flex;
 }
 .recentPurchases .row {
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
 }
 
 /* Purchases in list:*/
 .recentPurchases > .row > div:first-child {
-  flex-grow: 3;
+  flex: 3;
 }
 /* purchase checkboxes: */
 .recentPurchases > .row > div:last-child  {
-  flex-grow: 1;
+  flex: 1;
   text-align: right;
 }
 
-.summaryRow textarea  {
-  margin-bottom: 10px;
-  min-height: 100px;
-  width: 100%;
-}
 
 /* Any tablet and up adjustments: */
 @media only screen and (min-width: 600px) {
+  .opHeader, .customerData {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .customerData  {
     font-size: 1rem;
+  }
+  .opHeader > div:nth-child(1),
+  .opHeader > div:nth-child(2) {
+    display: initial;
+  }
+  .opHeader > div:last-child, 
+  .customerData > div:last-child  {
+    flex: 1;
+  }
+  .recentPurchases .row {
+    border-top: 0;
+    border-bottom: 1px solid #000;
   }
 }
