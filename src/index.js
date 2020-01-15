@@ -11,8 +11,6 @@ import Home from './Home';
 import Admin from './Admin';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-// ReactDOM.render(<Routing />, document.getElementById('root'));
-
 
 export default function Routing() {
   return (

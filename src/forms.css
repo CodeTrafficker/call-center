@@ -33,12 +33,20 @@ textarea  {
   border-radius: .25rem;
 }
 
+p label {
+  margin-left: 10px;
+}
+
+
 input[type="number"] {
   display: block;
   width: 100%;
   margin-bottom: 10px;
 }
 
+input[type='radio'] {
+  margin: 0 10px 0 5px;
+}
 
 /* Any tablet and up adjustments: */
 @media only screen and (min-width: 600px) {
