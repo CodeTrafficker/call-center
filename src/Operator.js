@@ -10,7 +10,7 @@ let ccidArr = [];
 class Operator extends React.Component {
   constructor(props)  {
     super(props);
-    this.state ={
+    this.state = {
       value: ''
     };
     this.handleChange = this.handleChange.bind(this);
@@ -31,8 +31,7 @@ class Operator extends React.Component {
   }
 
   handleSubmit = (e) => {
-    e.preventDefault();
-
+    e.preventDefault();     
     this.currentCustomers();
     // TODO: Why?:
     this.setState({})
@@ -57,10 +56,9 @@ class Operator extends React.Component {
     }
   }
 
-
   render() {
     return (
-      <div className="opGrid">
+      <div className="operatorPanel">
         <h2>Operator</h2>
 
         <p>Enter the last four digits of the customer's credit card to access their fraud alerts.</p>

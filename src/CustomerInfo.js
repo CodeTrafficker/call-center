@@ -32,6 +32,10 @@ class CustomerInfo extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+
+    // No where for data to go yet, 
+    // so faking submit by going back to /operator.
+    window.location = '/operator';
     // send data from the actual state
   }
 
@@ -123,7 +127,7 @@ class CustomerInfo extends React.Component {
 
 
     return (
-      <div className="opGrid">
+      <div className="customerInfoPanel">
         <div className="opHeader">
           <div>Name</div>
           <div>Credit Card</div>
