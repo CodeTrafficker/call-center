@@ -1,8 +1,4 @@
  /* Global resets and sitewide styles only */
-/* TODO: Box model? Normalize? */
-/* TODO: rems should be standardized */
-
-
 
 /* Color schemes:
 Darkest
@@ -31,15 +27,38 @@ E8638B
 DDE39B
 
 https://www.colourlovers.com/palette/3583115/Emergence looks good, basic blues
+
+Wavy web:
+https://www.colourlovers.com/palette/4667572/wavy_web
+4285F4 - dk blue
+48BBF9 - mid blue
+88C425 - mid green
+BEF202 - bright green
+F4FAD2 - blanched manila with a green tint
+
+Adding 052B80 as dark blue, and not using BEF202
+*/
+/*
+Halocline
+:root {
+  --darkest-bg: #06292D; // header, hard lines
+  --dark-bg: #02717A;    //text
+  --midlight1: #008D9E;  // links
+  --midlight2: #03BEE7;
+  --highlight: #DDE39B; / /Really light - text on dark bgs
+  --highlight2: #fff; 
+}
+
 */
 
+/* Wavy Web, modified: */
 :root {
-  --darkest-bg: #06292D; /* header, hard lines*/
-  --dark-bg: #02717A;    /*text*/
-  --midlight1: #008D9E;  /*links*/
-  --midlight2: #03BEE7;
-  --highlight: #DDE39B; /*Really light - text on dark bgs*/
-  --highlight2: #fff; 
+  --darkest-bg: #052B80; /* header bg, text, hard lines*/
+  --dark-bg:    #4285F4; /* body */
+  --midlight1:  #48BBF9; /*buttons*/
+  --midlight2:  #88C425;
+  --highlight:  #F4FAD2; /* content page background */
+  --highlight2: #ffffff; /* header text, button text */
 }
 
 body  {
@@ -61,10 +80,10 @@ button  {
   color: var(--highlight2);
 }
 button:hover, button:active  {
-  background-color: var(--dark-bg);
+  background-color: var(--darkest-bg);
 }
 textarea  {
-  border: 1px solid var(--dark-bg);
+  border: 1px solid var(--darkest-bg);
 }
 /* / colors */
 

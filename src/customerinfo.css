@@ -9,7 +9,7 @@
 }
 
 .opHeader, .customerData {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--darkest-bg);
 }
 .opHeader > div, .customerData > div {
   flex: 1;
@@ -36,7 +36,7 @@
   display: flex;
 }
 .recentPurchases .row {
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--darkest-bg);
 }
 
 /* Purchases in list:*/
@@ -69,6 +69,6 @@
   }
   .recentPurchases .row {
     border-top: 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--darkest-bg);
   }
 }
