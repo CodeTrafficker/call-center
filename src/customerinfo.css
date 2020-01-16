@@ -1,46 +1,74 @@
-/**/
 .opHeader > div  {
   padding: 10px 0;
   font-weight: bold;
 }
 .customerData  {
-  /*vertical-align: top;*/
   line-height: 1.5rem;
   font-size: .8rem;
   padding: 5px 0 20px 0;
 }
 
-.customerData form  {
-  align-self: flex-end;
-  width: 100%;
-  margin-top: 10px;
-
-}
-.customerData textarea  {
-  display: block;
-  margin-bottom: 10px;
-  outline: 1px solid #ccc;
-  width: 100%;
-}
-
-
-
-.opGrid {
-  /*display: flex;*/
-}
 .opHeader, .customerData {
-  display: flex;
-  flex-wrap: wrap;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--darkest-bg);
 }
 .opHeader > div, .customerData > div {
   flex: 1;
   padding-right: 10px;
 }
 
+.opHeader > div:nth-child(1),
+.opHeader > div:nth-child(2) {
+  display: none;
+}
+
+.opHeader > div:last-child, 
+.customerData > div:last-child {
+  flex: 3;
+  padding-right: 0;
+}
+
+.customerData > div:nth-child(1),
+.customerData > div:nth-child(2) {
+  display: inline-block;
+}
+
+.customerData > .recentPurchases  {
+  display: flex;
+}
+.recentPurchases .row {
+  border-top: 1px solid var(--darkest-bg);
+}
+
+/* Purchases in list:*/
+.recentPurchases > .row > div:first-child {
+  flex: 3;
+}
+/* purchase checkboxes: */
+.recentPurchases > .row > div:last-child  {
+  flex: 1;
+  text-align: right;
+}
+
+
 /* Any tablet and up adjustments: */
 @media only screen and (min-width: 600px) {
+  .opHeader, .customerData {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .customerData  {
     font-size: 1rem;
+  }
+  .opHeader > div:nth-child(1),
+  .opHeader > div:nth-child(2) {
+    display: initial;
+  }
+  .opHeader > div:last-child, 
+  .customerData > div:last-child  {
+    flex: 1;
+  }
+  .recentPurchases .row {
+    border-top: 0;
+    border-bottom: 1px solid var(--darkest-bg);
   }
 }
