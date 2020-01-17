@@ -20,7 +20,7 @@ Using:
 
 
 ### Caveats
-- The Operator form does not submit to anywhere. The submit button simply reloads /operator and clears the form.
+- The Operator form does not submit to anywhere. The submit button simply reloads ```/operator``` and clears the form.
 - The views for ```/home```, ```/manager```, and ```/admin``` are stubs with no functionality yet.
 
 
@@ -44,16 +44,14 @@ This single page app with four views should then open in your browser at http://
 
 ## To-Dos
 - Actually connect to a backend to submit form data
-- Manager Views, to access submitted data and track calls
-- Admin View to manage login access
+- Create Manager Views, to access submitted data and track calls
+- Create Admin View to manage login access
 - 404 handling
 
 
 ## Learn More
 ### Create-React-App
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 ### Surge.sh
 "Static web publishing for Front-End Developers -- 
