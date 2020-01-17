@@ -18,7 +18,7 @@ nav a:hover  {
 }
 
 /* React inserts class .active as default, 
-but can reset to diff class name in <Navlink> components */
+but can reset to diff class name in <Navlink> components if needed */
 nav a.active {
     background-color: var(--midlight2);
 }
