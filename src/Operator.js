@@ -20,7 +20,6 @@ class Operator extends React.Component {
   // Get all available ccids:
   currentCustomers = () => {
     mockCustomers.map((customer)=>  {
-      // console.log('ccid: '+customer.ccid);
       ccidArr.push(customer.ccid);
       return ccidArr;
     }
@@ -49,8 +48,7 @@ class Operator extends React.Component {
     } else  {
       document.querySelector('.ccInfoForm input')
       .insertAdjacentHTML('afterend',"<span class='noReportErr'>There are no reports under passcode <b>"+ 
-        this.state.value +
-        "</b>. Please try a different number.</span>");
+        this.state.value + "</b>. Please try a different number.</span>");
       
       showCustInfo = '';
     }

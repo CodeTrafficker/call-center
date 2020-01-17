@@ -33,8 +33,8 @@ class CustomerInfo extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    // No where for data to go yet, 
-    // so faking submit by going back to /operator.
+    // Nowhere for data to go yet, 
+    // so... faking submit appearance by going back to /operator.
     window.location = '/operator';
     // send data from the actual state
   }
@@ -42,9 +42,6 @@ class CustomerInfo extends React.Component {
   render() {
     const mockCustomers = MOCKCUSTOMERS;
 
-    // Works:
-    // passedCCID: {this.state.passedCCID}
-    // TODO: How to clear on submit or when new ccid entered from Operator...
     const selected = mockCustomers.find(customer => customer.ccid === this.state.passedCCID );
 
     const selectedCustomer = 

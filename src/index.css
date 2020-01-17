@@ -6,7 +6,7 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: var(--highlight2);
   font-family: 'Orbitron', sans-serif;
   font-size: 0.75rem;
   padding: 10px;
@@ -22,7 +22,6 @@ but can reset to diff class name in <Navlink> components if needed */
 nav a.active {
     background-color: var(--midlight2);
 }
-
 
 /* tablet and up adjustments: */
 @media only screen and (min-width: 600px) {

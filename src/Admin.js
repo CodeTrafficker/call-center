@@ -1,6 +1,4 @@
 import React from 'react';
-// import './operator.css';
-// import MOCKCUSTOMERS from './mockData';
 
 class Admin extends React.Component {
   constructor(props)  {
@@ -12,7 +10,7 @@ class Admin extends React.Component {
 
   render() {
     return (
-      <div className="">
+      <div>
         <h2>Admin</h2>
         Some stuff from Admin.js.
       </div>
