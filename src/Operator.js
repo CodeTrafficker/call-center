@@ -20,7 +20,6 @@ class Operator extends React.Component {
   // Get all available ccids:
   currentCustomers = () => {
     mockCustomers.map((customer)=>  {
-      // console.log('ccid: '+customer.ccid);
       ccidArr.push(customer.ccid);
       return ccidArr;
     }
@@ -49,8 +48,7 @@ class Operator extends React.Component {
     } else  {
       document.querySelector('.ccInfoForm input')
       .insertAdjacentHTML('afterend',"<span class='noReportErr'>There are no reports under passcode <b>"+ 
-        this.state.value +
-        "</b>. Please try a different number.</span>");
+        this.state.value + "</b>. Please try a different number.</span>");
       
       showCustInfo = '';
     }
@@ -61,10 +59,13 @@ class Operator extends React.Component {
       <div className="operatorPanel">
         <h2>Operator</h2>
 
-        <p>Enter the last four digits of the customer's credit card to access their fraud alerts.</p>
-
         <form onSubmit={this.handleSubmit} className='ccInfoForm'>
-          <input type="number" name="ccid" value={this.state.value} onChange={this.handleChange}></input>
+          <p>
+            Enter the last four digits of the customer's credit card 
+            to access their fraud alerts.
+            <input type="number" name="ccid" value={this.state.value} onChange={this.handleChange}></input>
+          </p>
+
           <button type="submit">Show customer record</button>
         </form>
 

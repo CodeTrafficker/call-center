@@ -1,64 +1,29 @@
- /* Global resets and sitewide styles only */
+/* Global resets and sitewide styles only */
 
-/* Color schemes:
+/* Color schemes, 5 to 7 steps:
 Darkest
+dark
 mids
-highlight
+highlights
 
-https://www.colourlovers.com/palette/3529601/WDI_103 - dark red to manila:
-33191A
-AB3334
-DDA185
-E8D1A5 (?)
-FAE9C8
-
-Burning Desire: https://www.colourlovers.com/palette/3915027/Burning_Desire
-5F324B
-654662
-7E4D79
-964B6A
-E8638B
-
---> Halocline - https://www.colourlovers.com/palette/3572150/Halocline
-06292D
-02717A
-008D9E
-03BEE7
-DDE39B
-
-https://www.colourlovers.com/palette/3583115/Emergence looks good, basic blues
-
-Wavy web:
-https://www.colourlovers.com/palette/4667572/wavy_web
-4285F4 - dk blue
-48BBF9 - mid blue
-88C425 - mid green
-BEF202 - bright green
-F4FAD2 - blanched manila with a green tint
-
-Adding 052B80 as dark blue, and not using BEF202
-*/
-/*
-Halocline
-:root {
-  --darkest-bg: #06292D; // header, hard lines
-  --dark-bg: #02717A;    //text
-  --midlight1: #008D9E;  // links
-  --midlight2: #03BEE7;
-  --highlight: #DDE39B; / /Really light - text on dark bgs
-  --highlight2: #fff; 
-}
-
-*/
-
-/* Wavy Web, modified: */
-:root {
-  --darkest-bg: #052B80; /* header bg, text, hard lines*/
-  --dark-bg:    #4285F4; /* body */
-  --midlight1:  #48BBF9; /*buttons*/
+Prev checkin:
+  --darkest-bg: #052B80; // header bg, text, hard lines
+  --dark-bg:    #4285F4; // body 
+  --midlight1:  #48BBF9; // buttons
   --midlight2:  #88C425;
-  --highlight:  #F4FAD2; /* content page background */
-  --highlight2: #ffffff; /* header text, button text */
+  --highlight:  #F4FAD2; // content page background 
+  --highlight2: #ffffff; // header text, button text
+*/
+
+/* Sitewide colors */
+:root {
+  --darkest-bg: #052B80; 
+  --dark-bg:    #263DEF;
+  --midlight1:  #48BBF9;
+  --midlight2:  #3774E5;
+  --midlight3:  #E3E3E3;
+  --highlight:  #F7F7F7;
+  --highlight2: #FFFFFF;
 }
 
 body  {
@@ -82,12 +47,16 @@ button  {
 button:hover, button:active  {
   background-color: var(--darkest-bg);
 }
-textarea  {
+input[type='number'], textarea  {
   border: 1px solid var(--darkest-bg);
 }
-/* / colors */
+/*  END Sitewide colors */
 
-html  {width: 100%;}
+
+/* Global resets: */
+html  {
+  width: 100%;
+}
 
 html *  {
   position: relative;
@@ -101,6 +70,21 @@ body  {
   -moz-osx-font-smoothing: grayscale;
 }
 
+ul  {
+  padding: 0;
+  list-style: none;
+}
+
+th  {
+  text-align: start;
+}
+
+a   {
+  text-decoration: none;
+}
+/* END resets */
+
+
 #root {
   border-radius: .25rem;
   max-width: 1000px;
@@ -108,8 +92,11 @@ body  {
   padding: 0 0 10px 0;
 }
 
-/* Global flexbox styles */
-/* .row and .column for children of flex containters*/
+#root > h2  {
+  text-align: center;
+}
+
+/* Global flexbox styles -- .row and .column for children of flex containers */
 .row {
   display: flex;
   flex-direction: row;
@@ -125,30 +112,9 @@ body  {
 }
 /* /Global flexbox styles */
 
-
-
-
-ul  {
-  padding: 0;
-  list-style: none;
-}
-
-th  {
-  text-align: start;
-}
-
-a   {
-  text-decoration: none;
-}
-
-#root > h2  {
-  text-align: center;
-}
-
 /* Any tablet and up adjustments: */
 @media only screen and (min-width: 600px) {
   body  {
     margin: 0 20px 60px 20px;
   }
 }
-/* END resets */

@@ -6,23 +6,22 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: var(--highlight2);
   font-family: 'Orbitron', sans-serif;
   font-size: 0.75rem;
   padding: 10px;
   text-transform: uppercase;
 }
 
-nav a:hover, nav a:active  {
+nav a:hover  {
   background-color: var(--dark-bg);
 }
 
 /* React inserts class .active as default, 
-but can reset to diff class name in <Navlink> components */
+but can reset to diff class name in <Navlink> components if needed */
 nav a.active {
-    background-color: var(--dark-bg);
+    background-color: var(--midlight2);
 }
-
 
 /* tablet and up adjustments: */
 @media only screen and (min-width: 600px) {

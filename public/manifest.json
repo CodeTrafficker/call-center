@@ -1,15 +1,20 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Call Center Demo App",
+  "name": "Call Center Demo App",
+  "homepage": "github.com/CodeTrafficker/call-center",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "sizes": "64x64",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "start_url": "/",
+  "display": "minimal-ui",
+  "theme_color": "#052B80",
+  "background_color": "#263DEF",
+  "serviceworker": {
+    "src": "./serviceWorker.js",
+    "scope": "/"
+  }
 }

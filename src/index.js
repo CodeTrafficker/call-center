@@ -16,14 +16,14 @@ export default function Routing() {
   return (
     <Router>
         <nav>
-          <NavLink to="/home">Home</NavLink>
+          <NavLink to="/" exact>Home</NavLink>
           <NavLink to="/operator">Operator</NavLink>
           <NavLink to="/managers">Manager</NavLink>
           <NavLink to="/admin">Admin</NavLink>
         </nav>
 
          <Switch>
-          <Route path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/operator" component={Operator} />
           <Route path="/managers" component={Managers} />
           <Route path="/admin" component={Admin} />
@@ -32,10 +32,8 @@ export default function Routing() {
   );
 }
 
-
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-
 
