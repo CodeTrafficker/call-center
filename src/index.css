@@ -13,14 +13,14 @@ nav a {
   text-transform: uppercase;
 }
 
-nav a:hover, nav a:active  {
+nav a:hover  {
   background-color: var(--dark-bg);
 }
 
 /* React inserts class .active as default, 
 but can reset to diff class name in <Navlink> components */
 nav a.active {
-    background-color: var(--dark-bg);
+    background-color: var(--midlight2);
 }
 
 

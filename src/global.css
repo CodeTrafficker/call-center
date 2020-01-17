@@ -49,16 +49,37 @@ Halocline
   --highlight2: #fff; 
 }
 
+// Wavy Web, modified, prev checkin:;
+  --darkest-bg: #052B80; // header bg, text, hard lines
+  --dark-bg:    #4285F4; // body 
+  --midlight1:  #48BBF9; // buttons
+  --midlight2:  #88C425;
+  --highlight:  #F4FAD2; // content page background 
+  --highlight2: #ffffff; // header text, button text
+
+
+
+1 Wavy web + Portuguese Tile:
+https://www.colourlovers.com/palette/4631586/portuguese_tile
+  --darkest-bg: #052B80; // from WW - header bg, text, hard lines, btn hover
+  --dark-bg:    #263DEF; // body+gutters
+  --midlight1:  #48BBF9; // buttons
+  --midlight2:  #3774E5; // med. blue for active nav links
+  --midlight3:  #E3E3E3; // mid silver-grey
+  --highlight:  #F7F7F7; // off-white content page background
+  --highlight2: #FFFFFF; // header text, button text
+
 */
 
 /* Wavy Web, modified: */
 :root {
-  --darkest-bg: #052B80; /* header bg, text, hard lines*/
-  --dark-bg:    #4285F4; /* body */
-  --midlight1:  #48BBF9; /*buttons*/
-  --midlight2:  #88C425;
-  --highlight:  #F4FAD2; /* content page background */
-  --highlight2: #ffffff; /* header text, button text */
+  --darkest-bg: #052B80; 
+  --dark-bg:    #263DEF;
+  --midlight1:  #48BBF9;
+  --midlight2:  #3774E5;
+  --midlight3:  #E3E3E3;
+  --highlight:  #F7F7F7;
+  --highlight2: #FFFFFF;
 }
 
 body  {
@@ -82,7 +103,7 @@ button  {
 button:hover, button:active  {
   background-color: var(--darkest-bg);
 }
-textarea  {
+input[type='number'], textarea  {
   border: 1px solid var(--darkest-bg);
 }
 /* / colors */
