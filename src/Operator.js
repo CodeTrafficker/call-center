@@ -61,10 +61,13 @@ class Operator extends React.Component {
       <div className="operatorPanel">
         <h2>Operator</h2>
 
-        <p>Enter the last four digits of the customer's credit card to access their fraud alerts.</p>
-
         <form onSubmit={this.handleSubmit} className='ccInfoForm'>
-          <input type="number" name="ccid" value={this.state.value} onChange={this.handleChange}></input>
+          <p>
+            Enter the last four digits of the customer's credit card 
+            to access their fraud alerts.
+            <input type="number" name="ccid" value={this.state.value} onChange={this.handleChange}></input>
+          </p>
+
           <button type="submit">Show customer record</button>
         </form>
 
