@@ -12,7 +12,7 @@ class Home extends React.Component {
     return (
       <div>
         <h2>Home</h2>
-        Some stuff from Home.js.
+        Navigate to "OPERATOR" and try codes 9001, 9002, or 9003 to reveal form.
       </div>
     );
   }

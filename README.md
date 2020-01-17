@@ -1,68 +1,78 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## React Call Center Demo 
+This React demo utilizes mock data from a local json string to populate a call center operator's view with a list of a customer's last three purchases, and form elements for marking them as fraudulent, if the card was stolen, and a summary to fill out after the phone call.
 
-In the project directory, you can run:
+To access a mock customer on the /operator view, use codes ```9001```, ```9002```, or ```9003``` and hit the "Show customer record" button. Numbers other than these will display a simple error message.
 
-### `npm start`
+The pages for /, /manager, and /admin are stubs with no functionality yet.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+### Coding Highlights
+Using: 
+- "Mostly" ES6 JavaScript - const, let, ternary operations, arrow functions, import/exports, classes;
+- CSS vars for setting site colors;
+- Flexbox instead of floats or Bootstrap/Foundation style frameworks
+- A 'mobile-first' responsive design strategy
+- Google web fonts Lato and Orbitron;
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+// ## On the web
+// A recent build is currently hosted on [Surge](https://surge.sh/) at:
+// http://XXXXXXXXXXX.surge.sh/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This guide assumes you already have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone or download master branch from Github to your local work directory.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Maneuver to your local version of /call-center/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Run 
+
+```npm install```
+
+then
+
+```npm start```
+
+This single page app with four views should then open in your browser at http://localhost:3000/ . Most of the action is at /operator, accessible via the second navigation tab.
+
+
+## Caveats
+- Operator form does not submit to anywhere. The submit button simply reloads /operator and clears the form.
+- The pages for /home, /manager, and /admin are stubs with no functionality yet.
+
+
+## To-Dos
+- Actually connect to a backend to submit form data
+- Manager Views
+- Admin View
+- 404 handling
+
+
+ ## Creator [Phil Lollar](https://github.com/CodeTrafficker/)
+
+
 
 ## Learn More
-
+### Create-React-App
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Surge.sh
+"Static web publishing for Front-End Developers -- 
+Simple, single-command web publishing. Publish HTML, CSS, and JS for free, without leaving the command line." at [Surge.sh](https://surge.sh/)
 
-### Code Splitting
+### Web Fonts
+This demo uses [Lato](https://fonts.google.com/specimen/Lato) and 
+[Orbitron](https://fonts.google.com/specimen/Orbitron) typefaces from 
+[Google Fonts](https://fonts.google.com/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### TITLE
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+// Can you enter tags here? responsive css react flexbox json forms
