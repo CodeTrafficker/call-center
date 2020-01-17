@@ -6,20 +6,22 @@ To access a customer's data in the /operator view, use codes ```9001```, ```9002
 ## On the web
 A recent build is currently hosted on [Surge](https://surge.sh/) at: http://call-center-demo.surge.sh/operator
 
+The Surge service hosts a flat, minimized build of the project, so code inspection is better done at the [Github repo](https://github.com/CodeTrafficker/call-center).
+
 
 ## Coding Highlights
 Using: 
-- "Mostly" ES6 JavaScript - const, let, ternary operations, arrow functions, import/exports, classes extending React component;
-- CSS vars for setting site colors;
-- Minimum CSS resets of browser defaults;
-- Flexbox instead of floats or Bootstrap/Foundation style frameworks;
-- A 'mobile-first' responsive design strategy;
-- Google web fonts Lato and Orbitron;
+- "Mostly" ES6 JavaScript - const, let, ternary operations, arrow functions, import/exports, classes extending React component
+- CSS vars for setting site colors
+- Minimum CSS resets of browser defaults
+- Flexbox instead of floats or Bootstrap/Foundation style frameworks
+- A 'mobile-first' responsive design strategy
+- Google web fonts Lato and Orbitron
 
 
 ### Caveats
 - The Operator form does not submit to anywhere. The submit button simply reloads /operator and clears the form.
-- The views for /home, /manager, and /admin are stubs with no functionality yet.
+- The views for ```/home```, ```/manager```, and ```/admin``` are stubs with no functionality yet.
 
 
 ## Installation
@@ -46,8 +48,6 @@ This single page app with four views should then open in your browser at http://
 - Admin View to manage login access
 - 404 handling
 
-
- ## Creator [Phil Lollar](https://github.com/CodeTrafficker/)
 
 ## Learn More
 ### Create-React-App
