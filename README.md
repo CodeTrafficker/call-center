@@ -42,11 +42,12 @@ then
 This single page app with four views should then open in your browser at http://localhost:3000/ . Most of the action is at /operator, accessible via the second navigation tab.
 
 
-## To-Dos
+## To-Dos cards on this project's "Github Projects" board:
 - Actually connect to a backend to submit form data
 - Create Manager Views, to access submitted data and track calls
 - Create Admin View to manage login access
 - 404 handling
+- Unit testing
 
 
 ## Learn More
